@@ -6,12 +6,15 @@ import dash_bootstrap_components as dbc
 from navbar import navbar
 from barchart import glchrt
 
+
+
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
 
 
 app.layout = html.Div(children=[
    navbar,
-   dbc.Row([dbc.Col([dbc.Row(glchrt),dbc.Row(["Graf2"])]),dbc.Col([dbc.Row([
+   dbc.Row([dbc.Col([dbc.Row(glchrt),dbc.Row(["Graf1"])]),dbc.Col([dbc.Row([
 
     dcc.Textarea(
         id='textarea-example1',
