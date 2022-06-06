@@ -1,12 +1,11 @@
-import dash
 import plotly.express as px
-import plotly.io as pio
 import pandas as pd
-from dash import Dash, dcc, html, Input, Output
-import dash_bootstrap_components as dbc
+from dash import dcc, html
 
-col_list = ["genre", "loudness", "speechiness"]
+
+col_list = ["genre", "loudness"]
 df = pd.read_csv("genres_v2.csv", usecols=col_list)
+df["loudness"] = df["loudness"].abs()
 
 genreloudness = px.bar(
     data_frame=df,
