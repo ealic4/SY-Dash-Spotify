@@ -5,16 +5,11 @@ import dash_bootstrap_components as dbc
 
 from navbar import navbar
 from barchart import glchrt
-
-
-
+from piechart import gl2chrt
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
-
-
 app.layout = html.Div(children=[
    navbar,
-   dbc.Row([dbc.Col([dbc.Row(glchrt),dbc.Row(["Graf1"])]),dbc.Col([dbc.Row([
+   dbc.Row([dbc.Col([dbc.Row(glchrt),dbc.Row([gl2chrt])]),dbc.Col([dbc.Row([
 
     dcc.Textarea(
         id='textarea-example1',
@@ -22,8 +17,6 @@ app.layout = html.Div(children=[
         style={'width': 250, 'height': 150, 'border': 0, 'marginTop': 100, 'text-align':'justify'},
     ),
     html.Div(id='textarea-example-output1', style={'whiteSpace': 'pre-line'})
-
-
 ]),
        dbc.Row([
            html.Div([dcc.Textarea(
@@ -43,7 +36,6 @@ app.layout = html.Div(children=[
     html.Div(id='textarea-example-output', style={'whiteSpace': 'pre-line'})
 ])])])
 ])
-
 
 if __name__ == '__main__':
     app.run_server(port=8080, debug=True)

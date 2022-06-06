@@ -3,7 +3,7 @@ import pandas as pd
 from dash import dcc, html
 
 
-col_list = ["genre", "loudness", "speechiness"]
+col_list = ["genre", "loudness"]
 df = pd.read_csv("genres_v2.csv", usecols=col_list)
 df["loudness"] = df["loudness"].abs()
 
