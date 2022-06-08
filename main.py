@@ -13,15 +13,15 @@ app.layout = html.Div(children=[
 
     dcc.Textarea(
         id='textarea-example1',
-        value='Ovaj bar-chart pokazuje atribut loudness kroz razlicite muzicke zanrove. Atribut loudness je uglavnom negativan.',
-        style={'width': 250, 'height': 150, 'border': 0, 'marginTop': 100, 'text-align':'justify'},
+        value='This chart shows the distribution of loudness attribute through different music genres. Since the loudness attribute is mostly negative, here is used the positive mean value.',
+        style={'width': 250, 'height': 200, 'border': 0, 'marginTop': 100, 'text-align':'justify'},
     ),
     html.Div(id='textarea-example-output1', style={'whiteSpace': 'pre-line'})
 ]),
        dbc.Row([
            html.Div([dcc.Textarea(
         id='textarea-example2',
-        value='Textarea content initialized\nwith multiple lines of text',
+        value='This chart is showing the numbers of songs by genre. Did you know that Dark Trap is this popular?',
         style={'width': 250, 'height': 150, 'margin-top': 150, 'border': 0 , 'text-align':'justify'},
     ),
     html.Div(id='textarea-example-output2', style={'whiteSpace': 'pre-line'})
@@ -30,7 +30,7 @@ app.layout = html.Div(children=[
 ])]), dbc.Col([html.Div([
         dcc.Textarea(
         id='textarea-example',
-        value = 'The key improvement of SimpleText over TeachText was the addition of text styling. The underlying OS required by SimpleText implemented\The key improvement of SimpleText over TeachText was the addition of text styling. The underlying OS required by SimpleText implemented. SimpleText over TeachText was the addition of text styling. The underlying OS required by SimpleText implemented.',
+        value = 'If you are a data lover, welcome to our page. Sign in or Register to show more tools and open more possibilities. The key improvement of SimpleText over TeachText was the addition of text styling. The underlying OS required by SimpleText implemented. SimpleText over TeachText was the addition of text styling. The underlying OS required by SimpleText implemented.',
         style={'width': 250, 'height': 400, 'border': 0, 'marginTop': 100, 'text-align':'justify'},
     ),
     html.Div(id='textarea-example-output', style={'whiteSpace': 'pre-line'})
