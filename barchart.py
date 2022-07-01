@@ -30,7 +30,7 @@ genreloudness = px.bar(
     "genre":"Genre"},
     title='Loudness-Genre Distribution',
     width=720,
-    height=380,
+    height=320,
     template='gridon')
 
 

@@ -17,8 +17,7 @@ dropdown = dbc.DropdownMenu(
 '''
 nav_contents = [
     dbc.NavItem(dbc.NavLink("Home", href="#", active=True)),
-    dbc.NavItem(dbc.NavLink("Charts", href="#")),
-    dbc.NavItem(dbc.NavLink("Trending", href="#")),
+    dbc.NavItem(dbc.NavLink("Analysis page", href="#")),
     dbc.NavItem(dbc.DropdownMenu(
     label="More",
     children=[
